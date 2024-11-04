@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Book Sale Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Sale Website</h1>
+        <div id="registrationForm">
+            <h2>Register</h2>
+            <form id="form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="date" id="dob" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="whatsapp" placeholder="WhatsApp Number" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        
+        <div id="bookStore" class="hidden">
+            <h2>Book Store</h2>
+            <input type="text" id="searchInput" placeholder="Search by author or book title" onkeyup="filterBooks()">
+            <div class="books" id="bookList"></div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
